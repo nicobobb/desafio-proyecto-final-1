@@ -1,0 +1,149 @@
+/*Font sizes*/
+.bg-primary {
+  background-color: #fab302;
+}
+
+.color-primary {
+  color: #fab302;
+}
+
+.border-primary {
+  border: 1px solid #fab302;
+}
+
+.bg-secondary {
+  background-color: #e94587;
+}
+
+.color-secondary {
+  color: #e94587;
+}
+
+.border-secondary {
+  border: 1px solid #e94587;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.color-white {
+  color: white;
+}
+
+.border-white {
+  border: 1px solid white;
+}
+
+.bg-error {
+  background-color: #a92222;
+}
+
+.color-error {
+  color: #a92222;
+}
+
+.border-error {
+  border: 1px solid #a92222;
+}
+
+.bg-success {
+  background-color: green;
+}
+
+.color-success {
+  color: green;
+}
+
+.border-success {
+  border: 1px solid green;
+}
+
+.h-10 {
+  height: 10%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.h-20 {
+  height: 20%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.h-30 {
+  height: 30%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.h-40 {
+  height: 40%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.h-60 {
+  height: 60%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.h-70 {
+  height: 70%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.h-80 {
+  height: 80%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.h-90 {
+  height: 90%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+header div {
+  background-color: #fab302;
+  padding: 10px 0;
+}/*# sourceMappingURL=main.css.map */
