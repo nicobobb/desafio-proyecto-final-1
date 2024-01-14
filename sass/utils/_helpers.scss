@@ -28,3 +28,53 @@ $colors: (
         width: $i * 10%;
     }
 }
+
+$breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+);
+
+@each $breakpoint, $value in $breakpoints {
+    .d-#{$breakpoint}-block {
+        @media (min-width: $value) {
+            display: block !important;
+        }
+    }
+
+    .d-#{$breakpoint}-flex {
+        @media (min-width: $value) {
+            display: flex !important;
+        }
+    }
+
+    .d-#{$breakpoint}-inline {
+        @media (min-width: $value) {
+            display: inline !important;
+        }
+    }
+
+    .d-#{$breakpoint}-inline-block {
+        @media (min-width: $value) {
+            display: inline-block !important;
+        }
+    }
+
+    .d-#{$breakpoint}-none {
+        @media (min-width: $value) {
+            display: none !important;
+        }
+    }
+}
+
+@each $breakpoint, $value in $breakpoints {
+    @for $percentage from 10 through 100 {
+        .w-#{$breakpoint}-#{$percentage} {
+            @media (min-width: $value) {
+                width: $percentage * 1%;
+            }
+        }
+    }
+}

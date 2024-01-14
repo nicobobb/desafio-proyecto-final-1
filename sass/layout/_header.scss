@@ -1,6 +1,26 @@
-header {
-    div {
-        background-color: $primary-color;
+.header {
+    .header__logoContainer {
         padding: 10px 0;
+        text-align: center;
+
+        .logoContainer__logo {
+            max-width: 200px;
+        }
+    }
+
+    .nav__container {
+        background-color: lighten($color: $primary-color, $amount: 40);
+        justify-content: space-around;
+
+        .menu__list {
+            @include flexDirection(row, space-around, center);
+            list-style-type: none;
+            padding: 10px 0;
+        }
+
+        .search__container {
+            padding: 10px 0;
+            text-align: center;
+        }
     }
 }
