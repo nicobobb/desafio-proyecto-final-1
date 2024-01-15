@@ -1,5 +1,9 @@
 body,
-ul {
+ul,
+h1,
+h2,
+h3,
+p {
     margin: 0;
 }
 
@@ -9,4 +13,16 @@ ul {
 
 a {
     text-decoration: none;
+    color: darken($color: $primary-color, $amount: 10);
+    font-size: $font-size-md;
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+input {
+    border-radius: 5px;
+    background-color: lighten($color: $primary-color, $amount: 48);
+    padding: 5px;
+    font-size: 18px;
 }
