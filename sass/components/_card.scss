@@ -1,0 +1,36 @@
+.card__container {
+    @include flexDirection(row, space-around, center);
+    flex-wrap: wrap;
+    padding: 20px 0;
+    max-width: 2000px;
+    margin: auto;
+
+    .card__item {
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: lighten($color: $primary-color, $amount: 40);
+
+        .card__image {
+            display: flex;
+            margin: auto;
+            border-radius: 5px;
+            padding-bottom: 15px;
+        }
+
+        .card__title {
+            font-size: $font-size-md;
+            text-align: center;
+        }
+
+        .card__p--long {
+            text-align: justify;
+        }
+
+        .card__precio {
+            font-size: $font-size-md;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}
