@@ -1,0 +1,11 @@
+.btn {
+    padding: 5px 0;
+    font-size: $font-size-md;
+    border-radius: 5px;
+    background-color: lighten($color: $secondary-color, $amount: 10);
+    color: $white-color;
+    transition-duration: 0.4s;
+    &:hover {
+        background-color: lighten($color: $secondary-color, $amount: 15);
+    }
+}
