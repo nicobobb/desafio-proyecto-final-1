@@ -4,3 +4,9 @@
     justify-content: $content;
     align-items: $align;
 }
+
+@mixin hero($background-image) {
+    background-image: url($background-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
