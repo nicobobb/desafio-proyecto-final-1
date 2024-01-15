@@ -16,6 +16,7 @@
             @include flexDirection(row, space-around, center);
             list-style-type: none;
             padding: 10px 0;
+            max-width: 768px;
         }
 
         .search__container {
