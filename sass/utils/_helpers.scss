@@ -1,7 +1,7 @@
 $colors: (
     primary: $primary-color,
     secondary: $secondary-color,
-    white: $white-color,
+    light: $white-color,
     error: $error-color,
     success: $success-color,
 );
@@ -26,6 +26,16 @@ $colors: (
     }
     .w-#{$i * 10} {
         width: $i * 10%;
+    }
+}
+
+@for $i from 1 through 500 {
+    .hx-#{$i * 10} {
+        height: $i * 10px;
+    }
+
+    .wx-#{$i * 10} {
+        width: $i * 10px;
     }
 }
 
