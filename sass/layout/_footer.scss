@@ -15,6 +15,15 @@
             .social__iconContainer {
                 @include flexDirection(row, space-around, center);
                 padding: 10px 0;
+
+                .social__icon {
+                    a {
+                        transition: 0.5s;
+                        &:hover {
+                            color: lighten($color: $primary-color, $amount: 20);
+                        }
+                    }
+                }
             }
         }
 
