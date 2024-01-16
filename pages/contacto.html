@@ -36,30 +36,40 @@
             <h3 class="hero__h3">Contacto</h3>
         </section>
         <section class="form__section">
-            <form action="" class="form__container w-90">
+            <form
+                id="contactForm"
+                onsubmit="onSubmitContact(event)"
+                class="form__container w-90"
+            >
                 <input
+                    id="name"
                     placeholder="Nombre"
                     type="text"
-                    name="nombre"
                     class="border-primary w-90 form__input"
+                    required
                 />
+                <p id="nameError" class="input-msg-error"></p>
                 <input
+                    id="mail"
                     placeholder="Email"
                     type="text"
-                    name="precio"
                     class="border-primary w-90 form__input"
+                    required
                 />
-
+                <p id="mailError" class="input-msg-error"></p>
                 <textarea
+                    id="comment"
                     placeholder="Comentario"
-                    name=""
-                    id=""
                     cols="30"
                     rows="10"
                     class="border-primary w-90 form__input"
+                    required
                 ></textarea>
-
-                <button class="btn w-100 border-secondary form__button">
+                <p id="commentError" class="input-msg-error"></p>
+                <button
+                    type="submit"
+                    class="btn w-100 border-secondary form__button"
+                >
                     Enviar
                 </button>
             </form>
@@ -91,5 +101,8 @@
                 <p>© Juguetería Toys 2000-2024.</p>
             </div>
         </footer>
+        <script src="/js/toast.js"></script>
+        <script src="/js/validations.js"></script>
+        <script src="/js/contact.js"></script>
     </body>
 </html>
