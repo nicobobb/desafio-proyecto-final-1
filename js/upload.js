@@ -45,6 +45,7 @@ const onSubmitProduct = (e) => {
     );
     const ageFromError = document.getElementById("ageFromError");
     const ageToError = document.getElementById("ageToError");
+    const photoError = document.getElementById("photoError");
 
     // Nombre *
     if (validateStrings(nameInput.value)) {
@@ -196,6 +197,18 @@ const onSubmitProduct = (e) => {
             ageToError.innerText = "";
             ageToError.style.display = "none";
         }
+    }
+
+    // Valida si existe foto
+    if (photoInput.files.length === 0) {
+        photoInput.ariaInvalid = true;
+        photoError.innerText = "Debe seleccionar una foto.";
+        photoError.style.display = "block";
+        validForm = false;
+    } else {
+        photoInput.ariaInvalid = false;
+        photoError.innerText = "";
+        photoError.style.display = "none";
     }
 
     if (validForm) {
