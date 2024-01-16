@@ -6,7 +6,55 @@
 
     .hero__h3 {
         font-size: $font-size-md;
-        color: darken($color: $primary-color, $amount: 10);
+        color: darken($color: $primary-color, $amount: 20);
         padding: 20px 0 10px 0;
+    }
+}
+
+.nosotros__container {
+    margin: auto;
+
+    .nosotros__item {
+        @include flexDirection(row, space-around, center);
+        flex-wrap: wrap;
+        background-color: lighten($color: $primary-color, $amount: 40);
+        border-radius: 5px;
+        padding: 15px 0;
+        margin: 10px auto;
+        max-width: 840px;
+
+        .nosotros__textContainer {
+            margin: auto;
+            padding: 10px;
+        }
+
+        .nosotros__image {
+            border-radius: 20px;
+            margin: auto;
+            padding: 10px;
+        }
+    }
+}
+
+.nosotros__middleContainer {
+    background-color: lighten($color: $secondary-color, $amount: 20);
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+
+    .nosotros__middleText {
+        max-width: 830px;
+        margin: auto;
+        padding: 0 20px;
+
+        p {
+            font-size: $font-size-md;
+        }
+    }
+}
+
+@media (min-width: 578px) {
+    .reverse {
+        order: 2;
     }
 }
