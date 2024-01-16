@@ -4,10 +4,12 @@ function displayToast() {
     toast.id = "toast";
     toast.className = "toast__container border-success w-30";
 
+    // Crea el elemento h4
     const title = document.createElement("h4");
     title.className = "toast__title";
     title.textContent = "Felicitaciones!";
 
+    // Crea el elemento p
     const description = document.createElement("p");
     description.className = "toast__description";
     description.textContent = "Enviamos correctamente tu mensaje";
