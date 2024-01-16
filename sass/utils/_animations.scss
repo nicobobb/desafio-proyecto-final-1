@@ -1,0 +1,35 @@
+@keyframes fadeInRigth {
+    from {
+        opacity: 0;
+        display: none;
+        transform: translateX(300px);
+    }
+    // 50% {
+    //     margin-top: 50px;
+    // }
+    to {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutRigth {
+    from {
+        opacity: 1;
+        display: block;
+    }
+    to {
+        opacity: 0;
+        transform: translateX(300px);
+        display: none;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
