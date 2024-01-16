@@ -160,7 +160,11 @@ const onSubmitProduct = (e) => {
         stockError.style.display = "none";
     }
     // Edad desde y hasta
-    if (ageFromInput.value.length || ageToInput.value.length) {
+    if (
+        ageFromInput.value.length > 0 ||
+        ageToInput.value.length > 0 ||
+        parseInt(ageFromInput.value) >= parseInt(ageToInput.value)
+    ) {
         if (!validatePostiveNumber(ageFromInput.value)) {
             ageFromInput.ariaInvalid = true;
             ageFromError.innerText = "Debe ser un número positivo";
