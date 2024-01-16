@@ -36,71 +36,95 @@
             <h3 class="hero__h3">Alta de productos</h3>
         </section>
         <section class="form__section">
-            <form action="" class="form__container w-90">
+            <form
+                id="uploadForm"
+                onsubmit="onSubmitProduct(event)"
+                class="form__container w-90"
+            >
                 <input
+                    id="name"
                     placeholder="Nombre"
                     type="text"
                     name="nombre"
                     class="border-primary w-90 form__input"
                 />
+                <p id="nameError" class="input-msg-error"></p>
                 <input
+                    id="price"
                     placeholder="Precio"
                     type="text"
                     name="precio"
                     class="border-primary w-90 form__input"
                 />
+                <p id="priceError" class="input-msg-error"></p>
                 <input
+                    id="stock"
                     placeholder="Stock"
                     type="text"
                     name="stock"
                     class="border-primary w-90 form__input"
                 />
+                <p id="stockError" class="input-msg-error"></p>
                 <input
+                    id="brand"
                     placeholder="Marca"
                     type="text"
                     name="marca"
                     class="border-primary w-90 form__input"
                 />
+                <p id="brandError" class="input-msg-error"></p>
                 <input
+                    id="category"
                     placeholder="Categoría"
                     type="text"
                     name="categoria"
                     class="border-primary w-90 form__input"
                 />
+                <p id="categoryError" class="input-msg-error"></p>
                 <input
+                    id="shortDescription"
                     placeholder="Descripción corta"
                     type="text"
                     name="descripcionCorta"
                     class="border-primary w-90 form__input"
                 />
+                <p id="shortDescriptionError" class="input-msg-error"></p>
                 <input
+                    id="longDescription"
                     placeholder="Descripción larga"
                     type="text"
                     name="descripcionLarga"
                     class="border-primary w-90 form__input"
                 />
                 <div class="form__div w-90">
-                    <label for="delivery" class="wx-120">Envío sin cargo</label>
+                    <label for="freeDeliver" class="wx-120"
+                        >Envío sin cargo</label
+                    >
                     <input
-                        id="delivery"
+                        id="freeDeliver"
                         type="checkbox"
                         name="envio"
                         class="border-primary form__input"
                     />
                 </div>
                 <input
+                    id="ageFrom"
                     placeholder="Edad desde"
                     type="text"
                     name="edadDesde"
                     class="border-primary w-90 form__input"
                 />
+                <p id="ageFromError" class="input-msg-error"></p>
                 <input
+                    id="ageTo"
                     placeholder="Edad hasta"
                     type="text"
                     name="edadHasta"
                     class="border-primary w-90 form__input"
                 />
+                <p id="ageToError" class="input-msg-error"></p>
                 <input
+                    id="photo"
                     placeholder="Foto"
                     type="file"
                     name="foto"
@@ -138,5 +162,8 @@
                 <p>© Juguetería Toys 2000-2024.</p>
             </div>
         </footer>
+        <script src="/js/toast.js"></script>
+        <script src="/js/validations.js"></script>
+        <script src="/js/upload.js"></script>
     </body>
 </html>
