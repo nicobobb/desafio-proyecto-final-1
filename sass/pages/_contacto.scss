@@ -1,0 +1,12 @@
+.hero__contact {
+    @include hero("../../images/bg-contacto.png");
+    @include flexDirection(row, center, center);
+    position: relative;
+    margin-bottom: 10px;
+
+    .hero__h3 {
+        font-size: $font-size-md;
+        color: darken($color: $primary-color, $amount: 10);
+        padding: 120px 0 10px 0;
+    }
+}

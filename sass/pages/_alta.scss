@@ -1,0 +1,12 @@
+.hero__alta {
+    @include hero("../../images/bg-alta.jpg");
+    @include flexDirection(row, center, center);
+    position: relative;
+    margin-bottom: 10px;
+
+    .hero__h3 {
+        font-size: $font-size-md;
+        color: darken($color: $primary-color, $amount: 10);
+        padding: 20px 0 10px 0;
+    }
+}
