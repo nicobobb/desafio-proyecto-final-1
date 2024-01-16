@@ -1,0 +1,21 @@
+.form__section {
+    text-align: center;
+
+    .form__container {
+        margin: auto;
+        max-width: 450px;
+
+        .form__input {
+            margin: 10px 0;
+        }
+
+        .form__button {
+            margin: 15px 0;
+        }
+
+        .form__div {
+            @include flexDirection(row, center, center);
+            margin: auto;
+        }
+    }
+}
