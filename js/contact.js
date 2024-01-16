@@ -64,6 +64,6 @@ const onSubmitContact = (e) => {
         const stgComment = JSON.stringify(newComment);
         localStorage.setItem("message", stgComment);
         form.reset();
-        displayToast();
+        displayToast("Gracias!!!", "Pronto nos estaremos contactando. ");
     }
 };

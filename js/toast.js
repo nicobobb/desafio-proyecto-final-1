@@ -1,4 +1,4 @@
-function displayToast() {
+function displayToast(titleShow, descriptionShow) {
     // Crear el elemento toast
     const toast = document.createElement("div");
     toast.id = "toast";
@@ -7,12 +7,12 @@ function displayToast() {
     // Crea el elemento h4
     const title = document.createElement("h4");
     title.className = "toast__title";
-    title.textContent = "Felicitaciones!";
+    title.textContent = titleShow;
 
     // Crea el elemento p
     const description = document.createElement("p");
     description.className = "toast__description";
-    description.textContent = "Enviamos correctamente tu mensaje";
+    description.textContent = descriptionShow;
 
     toast.appendChild(title);
     toast.appendChild(description);
