@@ -7061,6 +7061,10 @@ p {
   box-sizing: content-box;
 }
 
+body {
+  overflow: hidden;
+}
+
 ul {
   padding-inline-start: 0;
 }
