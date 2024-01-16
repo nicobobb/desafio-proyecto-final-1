@@ -17,7 +17,7 @@ const saveGame = (game) => {
         localStorage.setItem("games", initialGames);
     }
     form.reset();
-    alert("El juego ha sido guardado correctamente");
+    displayToast("El Juego se guardó bien", "Muchas gracias 😁 ");
 };
 
 const onSubmitProduct = (e) => {
