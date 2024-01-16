@@ -23,10 +23,120 @@
                     <li><a href="./nosotros.html">Nosotros</a></li>
                 </ul>
                 <div class="search__container">
-                    <input type="text" placeholder="Buscar..." name="search" />
+                    <input
+                        type="text"
+                        placeholder="Buscar..."
+                        name="search"
+                        class="border-primary"
+                    />
                 </div>
             </nav>
         </header>
-        <section></section>
+        <section class="hero__alta hx-500">
+            <h3 class="hero__h3">Alta de productos</h3>
+        </section>
+        <section class="form__section">
+            <form action="" class="form__container w-90">
+                <input
+                    placeholder="Nombre"
+                    type="text"
+                    name="nombre"
+                    class="border-primary w-90 form__input"
+                />
+                <input
+                    placeholder="Precio"
+                    type="text"
+                    name="precio"
+                    class="border-primary w-90 form__input"
+                />
+                <input
+                    placeholder="Stock"
+                    type="text"
+                    name="stock"
+                    class="border-primary w-90 form__input"
+                />
+                <input
+                    placeholder="Marca"
+                    type="text"
+                    name="marca"
+                    class="border-primary w-90 form__input"
+                />
+                <input
+                    placeholder="Categoría"
+                    type="text"
+                    name="categoria"
+                    class="border-primary w-90 form__input"
+                />
+                <input
+                    placeholder="Descripción corta"
+                    type="text"
+                    name="descripcionCorta"
+                    class="border-primary w-90 form__input"
+                />
+                <input
+                    placeholder="Descripción larga"
+                    type="text"
+                    name="descripcionLarga"
+                    class="border-primary w-90 form__input"
+                />
+                <div class="form__div w-90">
+                    <label for="delivery" class="wx-120">Envío sin cargo</label>
+                    <input
+                        id="delivery"
+                        type="checkbox"
+                        name="envio"
+                        class="border-primary form__input"
+                    />
+                </div>
+                <input
+                    placeholder="Edad desde"
+                    type="text"
+                    name="edadDesde"
+                    class="border-primary w-90 form__input"
+                />
+                <input
+                    placeholder="Edad hasta"
+                    type="text"
+                    name="edadHasta"
+                    class="border-primary w-90 form__input"
+                />
+                <input
+                    placeholder="Foto"
+                    type="file"
+                    name="foto"
+                    class="border-primary w-90 form__input"
+                />
+                <button class="btn w-100 border-secondary form__button">
+                    Enviar
+                </button>
+            </form>
+        </section>
+        <footer class="footer__container">
+            <div class="footer__info">
+                <div class="footer__social wx-300">
+                    <h3 class="social__title wx-300">
+                        Seguinos en nuestras redes!
+                    </h3>
+                    <div class="social__iconContainer wx-300">
+                        <span class="social__icon"
+                            ><a href="#"
+                                ><i class="fa-brands fa-instagram"></i></a
+                        ></span>
+                        <span class="social__icon"
+                            ><a href="#"
+                                ><i class="fa-brands fa-whatsapp"></i></a
+                        ></span>
+                    </div>
+                </div>
+                <div class="footer__data wx-300">
+                    <p>Todos los juguetes al alcance de tu bolsillo.</p>
+                    <p>Envíos a todo el país.</p>
+                    <p>Descuentos y cuotas sin interés.</p>
+                </div>
+            </div>
+            <div class="footer__copyright color-light">
+                <p>© Juguetería Toys 2000-2024.</p>
+            </div>
+        </footer>
     </body>
 </html>
