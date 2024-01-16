@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dekko&display=swap");
-
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./utils/helpers";
@@ -12,5 +12,9 @@
 
 @import "./components/button";
 @import "./components/card";
+@import "./components/form";
 
 @import "./pages/index";
+@import "./pages/alta";
+@import "./pages/contacto";
+@import "./pages/nosotros";
