@@ -47,22 +47,27 @@
                     type="text"
                     name="nombre"
                     class="border-primary w-90 form__input"
+                    required
                 />
+
                 <p id="nameError" class="input-msg-error"></p>
                 <input
                     id="price"
                     placeholder="Precio"
-                    type="text"
+                    type="number"
                     name="precio"
                     class="border-primary w-90 form__input"
+                    required
                 />
                 <p id="priceError" class="input-msg-error"></p>
                 <input
                     id="stock"
                     placeholder="Stock"
-                    type="text"
+                    type="number"
                     name="stock"
                     class="border-primary w-90 form__input"
+                    required
+                    min="0"
                 />
                 <p id="stockError" class="input-msg-error"></p>
                 <input
@@ -71,6 +76,7 @@
                     type="text"
                     name="marca"
                     class="border-primary w-90 form__input"
+                    maxlength="20"
                 />
                 <p id="brandError" class="input-msg-error"></p>
                 <input
@@ -79,6 +85,7 @@
                     type="text"
                     name="categoria"
                     class="border-primary w-90 form__input"
+                    required
                 />
                 <p id="categoryError" class="input-msg-error"></p>
                 <input
@@ -87,15 +94,19 @@
                     type="text"
                     name="descripcionCorta"
                     class="border-primary w-90 form__input"
+                    required
+                    maxlength="120"
                 />
                 <p id="shortDescriptionError" class="input-msg-error"></p>
-                <input
+                <textarea
                     id="longDescription"
                     placeholder="Descripción larga"
                     type="text"
                     name="descripcionLarga"
                     class="border-primary w-90 form__input"
-                />
+                    maxlength="400"
+                    rows="8"
+                ></textarea>
                 <div class="form__div w-90">
                     <label for="freeDeliver" class="wx-120"
                         >Envío sin cargo</label
@@ -110,25 +121,27 @@
                 <input
                     id="ageFrom"
                     placeholder="Edad desde"
-                    type="text"
+                    type="number"
                     name="edadDesde"
                     class="border-primary w-90 form__input"
+                    min="0"
                 />
                 <p id="ageFromError" class="input-msg-error"></p>
                 <input
                     id="ageTo"
                     placeholder="Edad hasta"
-                    type="text"
+                    type="number"
                     name="edadHasta"
                     class="border-primary w-90 form__input"
+                    min="1"
                 />
                 <p id="ageToError" class="input-msg-error"></p>
                 <input
                     id="photo"
-                    placeholder="Foto"
                     type="file"
                     name="foto"
                     class="border-primary w-90 form__input"
+                    required
                 />
                 <p id="photoError" class="input-msg-error"></p>
                 <button class="btn w-100 border-secondary form__button">

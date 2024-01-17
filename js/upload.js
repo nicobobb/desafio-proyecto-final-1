@@ -112,7 +112,7 @@ const onSubmitProduct = (e) => {
         const validStgDesc = validateStgLength(
             shortDescriptionInput.value,
             10,
-            140
+            120
         );
         if (validStgDesc === true) {
             shortDescriptionInput.ariaInvalid = false;
