@@ -43,7 +43,7 @@
             >
                 <fieldset class="border-primary form__fieldset">
                     <legend class="form__legend">
-                        <span class="form__span">Nombre</span>
+                        <span class="form__span">Nombre (*)</span>
                     </legend>
                     <input
                         id="name"
@@ -59,7 +59,7 @@
 
                 <fieldset class="border-primary form__fieldset">
                     <legend class="form__legend">
-                        <span class="form__span">Precio</span>
+                        <span class="form__span">Precio (*)</span>
                     </legend>
                     <input
                         id="price"
@@ -68,12 +68,13 @@
                         name="precio"
                         class="border-primary w-90 form__input"
                         required
+                        min="1"
                     />
                 </fieldset>
                 <p id="priceError" class="input-msg-error"></p>
                 <fieldset class="border-primary form__fieldset">
                     <legend class="form__legend">
-                        <span class="form__span">Stock</span>
+                        <span class="form__span">Stock (*)</span>
                     </legend>
                     <input
                         id="stock"
@@ -102,7 +103,7 @@
                 <p id="brandError" class="input-msg-error"></p>
                 <fieldset class="border-primary form__fieldset">
                     <legend class="form__legend">
-                        <span class="form__span">Categoría</span>
+                        <span class="form__span">Categoría (*)</span>
                     </legend>
                     <input
                         id="category"
@@ -116,7 +117,7 @@
                 <p id="categoryError" class="input-msg-error"></p>
                 <fieldset class="border-primary form__fieldset">
                     <legend class="form__legend">
-                        <span class="form__span">Descripción corta</span>
+                        <span class="form__span">Descripción corta (*)</span>
                     </legend>
                     <input
                         id="shortDescription"
@@ -184,7 +185,7 @@
                 <p id="ageToError" class="input-msg-error"></p>
                 <fieldset class="border-primary form__fieldset">
                     <legend class="form__legend">
-                        <span class="form__span">Foto</span>
+                        <span class="form__span">Foto (*)</span>
                     </legend>
                     <input
                         id="photo"
