@@ -32,6 +32,15 @@ input {
     font-size: 18px;
 }
 
+input[type="file"]::file-selector-button {
+    background-color: #fffbf2;
+    padding: 7px;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: 1px solid #fcd575;
+    color: #c78f02;
+}
+
 textarea {
     background-color: lighten($color: $primary-color, $amount: 48);
     resize: none;
