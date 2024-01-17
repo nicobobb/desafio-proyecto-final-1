@@ -5,8 +5,26 @@
         margin: auto;
         max-width: 450px;
 
-        .form__input {
-            margin: 10px 0;
+        .form__fieldset {
+            border-radius: 5px;
+            margin: 15px 0;
+            padding: 1px 0px 0px 10px;
+            background-color: #fffbf2;
+
+            .form__legend {
+                text-align: left;
+                .form__span {
+                    padding: 0px 10px;
+                    color: darken($color: $primary-color, $amount: 10);
+                }
+            }
+
+            .form__input {
+                border: none;
+                &:focus-visible {
+                    outline: none;
+                }
+            }
         }
 
         .form__button {

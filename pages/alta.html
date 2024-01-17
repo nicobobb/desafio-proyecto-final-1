@@ -41,72 +41,108 @@
                 onsubmit="onSubmitProduct(event)"
                 class="form__container w-90"
             >
-                <input
-                    id="name"
-                    placeholder="Nombre"
-                    type="text"
-                    name="nombre"
-                    class="border-primary w-90 form__input"
-                    required
-                />
+                <fieldset class="border-primary form__fieldset">
+                    <legend class="form__legend">
+                        <span class="form__span">Nombre</span>
+                    </legend>
+                    <input
+                        id="name"
+                        placeholder=""
+                        type="text"
+                        name="nombre"
+                        class="border-primary w-90 form__input"
+                        required
+                    />
+                </fieldset>
 
                 <p id="nameError" class="input-msg-error"></p>
-                <input
-                    id="price"
-                    placeholder="Precio"
-                    type="number"
-                    name="precio"
-                    class="border-primary w-90 form__input"
-                    required
-                />
+
+                <fieldset class="border-primary form__fieldset">
+                    <legend class="form__legend">
+                        <span class="form__span">Precio</span>
+                    </legend>
+                    <input
+                        id="price"
+                        placeholder=""
+                        type="number"
+                        name="precio"
+                        class="border-primary w-90 form__input"
+                        required
+                    />
+                </fieldset>
                 <p id="priceError" class="input-msg-error"></p>
-                <input
-                    id="stock"
-                    placeholder="Stock"
-                    type="number"
-                    name="stock"
-                    class="border-primary w-90 form__input"
-                    required
-                    min="0"
-                />
+                <fieldset class="border-primary form__fieldset">
+                    <legend class="form__legend">
+                        <span class="form__span">Stock</span>
+                    </legend>
+                    <input
+                        id="stock"
+                        placeholder=""
+                        type="number"
+                        name="stock"
+                        class="border-primary w-90 form__input"
+                        required
+                        min="0"
+                    />
+                </fieldset>
                 <p id="stockError" class="input-msg-error"></p>
-                <input
-                    id="brand"
-                    placeholder="Marca"
-                    type="text"
-                    name="marca"
-                    class="border-primary w-90 form__input"
-                    maxlength="20"
-                />
+                <fieldset class="border-primary form__fieldset">
+                    <legend class="form__legend">
+                        <span class="form__span">Marca</span>
+                    </legend>
+                    <input
+                        id="brand"
+                        placeholder=""
+                        type="text"
+                        name="marca"
+                        class="border-primary w-90 form__input"
+                        maxlength="20"
+                    />
+                </fieldset>
                 <p id="brandError" class="input-msg-error"></p>
-                <input
-                    id="category"
-                    placeholder="Categoría"
-                    type="text"
-                    name="categoria"
-                    class="border-primary w-90 form__input"
-                    required
-                />
+                <fieldset class="border-primary form__fieldset">
+                    <legend class="form__legend">
+                        <span class="form__span">Categoría</span>
+                    </legend>
+                    <input
+                        id="category"
+                        placeholder=""
+                        type="text"
+                        name="categoria"
+                        class="border-primary w-90 form__input"
+                        required
+                    />
+                </fieldset>
                 <p id="categoryError" class="input-msg-error"></p>
-                <input
-                    id="shortDescription"
-                    placeholder="Descripción corta"
-                    type="text"
-                    name="descripcionCorta"
-                    class="border-primary w-90 form__input"
-                    required
-                    maxlength="120"
-                />
+                <fieldset class="border-primary form__fieldset">
+                    <legend class="form__legend">
+                        <span class="form__span">Descripción corta</span>
+                    </legend>
+                    <input
+                        id="shortDescription"
+                        placeholder=""
+                        type="text"
+                        name="descripcionCorta"
+                        class="border-primary w-90 form__input"
+                        required
+                        maxlength="120"
+                    />
+                </fieldset>
                 <p id="shortDescriptionError" class="input-msg-error"></p>
-                <textarea
-                    id="longDescription"
-                    placeholder="Descripción larga"
-                    type="text"
-                    name="descripcionLarga"
-                    class="border-primary w-90 form__input"
-                    maxlength="400"
-                    rows="8"
-                ></textarea>
+                <fieldset class="border-primary form__fieldset">
+                    <legend class="form__legend">
+                        <span class="form__span">Descripción larga</span>
+                    </legend>
+                    <textarea
+                        id="longDescription"
+                        placeholder=""
+                        type="text"
+                        name="descripcionLarga"
+                        class="border-primary w-90 form__input"
+                        maxlength="400"
+                        rows="8"
+                    ></textarea>
+                </fieldset>
                 <div class="form__div w-90">
                     <label for="freeDeliver" class="wx-120"
                         >Envío sin cargo</label
@@ -118,31 +154,46 @@
                         class="border-primary form__input"
                     />
                 </div>
-                <input
-                    id="ageFrom"
-                    placeholder="Edad desde"
-                    type="number"
-                    name="edadDesde"
-                    class="border-primary w-90 form__input"
-                    min="0"
-                />
+                <fieldset class="border-primary form__fieldset">
+                    <legend class="form__legend">
+                        <span class="form__span">Edad desde</span>
+                    </legend>
+                    <input
+                        id="ageFrom"
+                        placeholder=""
+                        type="number"
+                        name="edadDesde"
+                        class="border-primary w-90 form__input"
+                        min="0"
+                    />
+                </fieldset>
                 <p id="ageFromError" class="input-msg-error"></p>
-                <input
-                    id="ageTo"
-                    placeholder="Edad hasta"
-                    type="number"
-                    name="edadHasta"
-                    class="border-primary w-90 form__input"
-                    min="1"
-                />
+                <fieldset class="border-primary form__fieldset">
+                    <legend class="form__legend">
+                        <span class="form__span">Edad hasta</span>
+                    </legend>
+                    <input
+                        id="ageTo"
+                        placeholder=""
+                        type="number"
+                        name="edadHasta"
+                        class="border-primary w-90 form__input"
+                        min="1"
+                    />
+                </fieldset>
                 <p id="ageToError" class="input-msg-error"></p>
-                <input
-                    id="photo"
-                    type="file"
-                    name="foto"
-                    class="border-primary w-90 form__input"
-                    required
-                />
+                <fieldset class="border-primary form__fieldset">
+                    <legend class="form__legend">
+                        <span class="form__span">Foto</span>
+                    </legend>
+                    <input
+                        id="photo"
+                        type="file"
+                        name="foto"
+                        class="border-primary w-90 form__input"
+                        required
+                    />
+                </fieldset>
                 <p id="photoError" class="input-msg-error"></p>
                 <button class="btn w-100 border-secondary form__button">
                     Enviar

@@ -31,3 +31,8 @@ input {
     padding: 5px;
     font-size: 18px;
 }
+
+textarea {
+    background-color: lighten($color: $primary-color, $amount: 48);
+    resize: none;
+}

@@ -7085,6 +7085,11 @@ input {
   font-size: 18px;
 }
 
+textarea {
+  background-color: #fffbf2;
+  resize: none;
+}
+
 * {
   font-family: "Dekko", cursive;
 }
@@ -7212,8 +7217,24 @@ input {
   margin: auto;
   max-width: 450px;
 }
-.form__section .form__container .form__input {
-  margin: 10px 0;
+.form__section .form__container .form__fieldset {
+  border-radius: 5px;
+  margin: 15px 0;
+  padding: 1px 0px 0px 10px;
+  background-color: #fffbf2;
+}
+.form__section .form__container .form__fieldset .form__legend {
+  text-align: left;
+}
+.form__section .form__container .form__fieldset .form__legend .form__span {
+  padding: 0px 10px;
+  color: #c78f02;
+}
+.form__section .form__container .form__fieldset .form__input {
+  border: none;
+}
+.form__section .form__container .form__fieldset .form__input:focus-visible {
+  outline: none;
 }
 .form__section .form__container .form__button {
   margin: 15px 0;

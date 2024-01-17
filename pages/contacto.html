@@ -41,30 +41,47 @@
                 onsubmit="onSubmitContact(event)"
                 class="form__container w-90"
             >
-                <input
-                    id="name"
-                    placeholder="Nombre"
-                    type="text"
-                    class="border-primary w-90 form__input"
-                    required
-                />
+                <fieldset class="border-primary form__fieldset">
+                    <legend class="form__legend">
+                        <span class="form__span">Nombre</span>
+                    </legend>
+
+                    <input
+                        id="name"
+                        placeholder=""
+                        type="text"
+                        class="w-90 form__input"
+                        required
+                    />
+                </fieldset>
                 <p id="nameError" class="input-msg-error"></p>
-                <input
-                    id="mail"
-                    placeholder="Email"
-                    type="text"
-                    class="border-primary w-90 form__input"
-                    required
-                />
+
+                <fieldset class="border-primary form__fieldset">
+                    <legend class="form__legend">
+                        <span class="form__span">Email</span>
+                    </legend>
+                    <input
+                        id="mail"
+                        placeholder=""
+                        type="text"
+                        class="border-primary w-90 form__input"
+                        required
+                    />
+                </fieldset>
                 <p id="mailError" class="input-msg-error"></p>
-                <textarea
-                    id="comment"
-                    placeholder="Comentario"
-                    cols="30"
-                    rows="10"
-                    class="border-primary w-90 form__input"
-                    required
-                ></textarea>
+                <fieldset class="border-primary form__fieldset">
+                    <legend class="form__legend">
+                        <span class="form__span">Comentario</span>
+                    </legend>
+                    <textarea
+                        id="comment"
+                        placeholder=""
+                        cols="30"
+                        rows="10"
+                        class="border-primary w-90 form__input"
+                        required
+                    ></textarea>
+                </fieldset>
                 <p id="commentError" class="input-msg-error"></p>
                 <button
                     type="submit"
