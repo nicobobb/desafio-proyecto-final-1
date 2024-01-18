@@ -18,7 +18,7 @@ function displayToast(titleShow, descriptionShow) {
     toast.appendChild(description);
 
     // Agrega el toast al cuerpo del documento
-    const formSection = document.querySelector(".form__section");
+    const formSection = document.querySelector(".form__button");
     const formSectionParent = formSection.parentNode;
     formSectionParent.insertBefore(toast, formSection);
 

@@ -7221,6 +7221,7 @@ textarea {
 
 .form__section {
   text-align: center;
+  position: relative;
 }
 .form__section .form__container {
   margin: auto;
@@ -7265,8 +7266,10 @@ textarea {
   padding: 1rem;
   border-radius: 2rem;
   right: 3rem;
+  bottom: 10%;
   display: none;
   background-color: antiquewhite;
+  min-width: 230px;
 }
 .toast__container .toast__title {
   font-size: 1.5rem;
